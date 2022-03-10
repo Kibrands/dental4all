@@ -56,8 +56,29 @@ h1::first-letter {
     font-size: 2.5rem;
 }
 
+h3 {
+    font-size: 1.25rem;
+}
+
+h3 > span {
+    font-size: 1.75rem !important;
+}
+
 .nav-link::first-letter {
     font-size: 1rem;
+}
+
+.btn-d4a {
+    background-color: var(--primary);
+}
+
+.btn-d4a:hover {
+    background-color: #018d88;
+    color: white;
+}
+
+.btn-d4a:focus {
+    box-shadow: 0 0 0 0.25rem rgb(141 230 208 / 25%);
 }
 
 #gabinete {
@@ -65,22 +86,51 @@ h1::first-letter {
     background-size: cover;
 }
 
-#manifiesto {
+#manifiesto,
+#productos,
+#servicios {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+#manifiesto img,
+#servicios img,
+#productos img {
+    width: inherit;
+}
+
 #manifiesto p,
-#sobre-nosotros p {
+#sobre-nosotros p,
+#productos p,
+#servicios p {
     text-align: justify !important;
 }
 
 #sobre-nosotros {
-    background-color: #018d88;
+    background: linear-gradient(90deg, rgba(2,103,100,1) 10%, rgba(13,148,136,1) 59%, rgba(20,184,166,1) 100%);
     color: white;
 }
 
 #sobre-nosotros p {
     margin-bottom: 0 !important;
+}
+
+#inma p {
+    text-align: right !important;
+}
+
+@media all and (max-width: 768px) {
+    #inma p,
+    #maria p {
+        text-align: center !important;
+    }
+
+    #manifiesto img,
+    #servicios img,
+    #productos img {
+        text-align: center;
+        float: none !important;
+        max-width: fit-content !important;
+    }
 }
 
 #contacto p {
