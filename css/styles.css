@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: rgba(141, 230, 208, 0.45);
+}
+
+:root {
+    --primary: rgb(141, 230, 208);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #14b8a6;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0d9488;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary);
+    box-shadow: inset 7px 10px 12px 0px rgba(141, 230, 208, 0.45);
+}
+
+.navbar {
+    background-color: transparent;
+    text-align: right;
+    background-color: var(--primary) !important;
+}
+
+.navbar-brand>img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+.nav-link {
+    font-size: 0.8rem;
+    color: #222 !important;
+}
+
+.nav-link:hover {
+    color: #444 !important;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1::first-letter {
+    font-size: 2.5rem;
+}
+
+.nav-link::first-letter {
+    font-size: 1rem;
+}
+
+#gabinete {
+    background: url(/images/gabinete.jpg) center center;
+    background-size: cover;
+}
+
+#manifiesto {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#manifiesto p,
+#sobre-nosotros p {
+    text-align: justify !important;
+}
+
+#sobre-nosotros {
+    background-color: #018d88;
+    color: white;
+}
+
+#sobre-nosotros p {
+    margin-bottom: 0 !important;
+}
+
+#contacto p {
+    margin-bottom: 0 !important;
+}
+
+#contacto p > span {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+#contacto a,
+#contacto p {
+    color: #ccc;
+}
